@@ -1,0 +1,48 @@
+:root {
+  --grey: #181818;
+  --white: #E5DEDC;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background: var(--white);
+}
+
+::selection {
+  background: var(--white);
+  color: var(--grey);
+}
+
+main {
+  font-family: "Spirax", system-ui;
+  flex: 1;
+  display: flex;
+  background: var(--grey);
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: var(--white);
+  font-size: clamp(4rem, 18vw, 12rem);
+}
+
+footer {
+  padding: 1rem;
+}
+
+footer, footer a {
+  color: var(--grey);
+}
+
+footer img {
+  max-height: 1.2rem;
+  vertical-align: middle;
+  padding-left: .5rem;
+}
