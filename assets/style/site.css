@@ -21,16 +21,27 @@ body {
 
 main {
   font-family: "Spirax", system-ui;
+  color: var(--white);
   flex: 1;
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   background: var(--grey);
   align-items: center;
   justify-content: center;
 }
 
 h1 {
-  color: var(--white);
   font-size: clamp(4rem, 18vw, 12rem);
+}
+
+.greeting {
+  cursor: pointer;
+}
+.greeting::before,
+.greeting::after {
+  content: "\00B7";
+  padding: 0 1rem;
 }
 
 footer {
